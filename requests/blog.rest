@@ -1,0 +1,49 @@
+### Get all blogs
+GET http://localhost:3001/api/blogs
+Accept: application/json
+
+###
+
+### Create a new blog
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJpZCI6NSwiaWF0IjoxNzM0MDE0NDgyfQ.3B1c9F4ndrs3CgPOQPYPs2Bmb_HlQYc42-ZtBY2MVs4
+
+{
+  "author": "Dan Abramov",
+  "url": "https://exampleaddress.com",
+  "title": "On let vs const",
+  "likes": 1
+}
+
+
+###
+### Create a new blog
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJpZCI6MywiaWF0IjoxNzM0MDkzMzk2fQ.pS9PJZYdxzC4Ch2tzlc_fNnhUj5RnrFYC6bZ7jlPATo
+
+{
+  "author": "New author2",
+  "url": "https://example.com",
+  "title": "New Blog",
+  "likes": 2
+}
+
+###
+
+### Delete a blog by ID
+DELETE http://localhost:3001/api/blogs/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5hbWUiLCJpZCI6MSwiaWF0IjoxNzMzOTE0MTIwfQ.GiwDMwx6ZRC3YLiH0xO_LcXT-n6Lg_UsgUVOLkTtKfA
+
+
+
+###
+
+### Update a blog by ID
+PUT http://localhost:3001/api/blogs/10
+
+###
+
+### GET authors
+GET http://localhost:3001/api/authors

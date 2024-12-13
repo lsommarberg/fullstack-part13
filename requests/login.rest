@@ -1,0 +1,12 @@
+### Login request
+POST http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "secret"
+}
+
+### 
+DELETE http://localhost:3001/api/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJpZCI6MywiaWF0IjoxNzM0MDk0NjYyfQ.w6XRbeQ5pQKGS8mFRnrc9nJ9x5_wqBa2lWQRfr2R8JM
